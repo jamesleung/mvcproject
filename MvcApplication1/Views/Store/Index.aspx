@@ -13,7 +13,7 @@
     <ul>
     <% foreach (string genreName in Model.Genres)
        {%>
-       <li><%:genreName %></li>
+       <li><%:Html.ActionLink(genreName, "Browse", new { Genre = genreName }) %></li>
 
     <%} %>
     </ul>
